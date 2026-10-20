@@ -1,0 +1,80 @@
+target/
+!.mvn/wrapper/maven-wrapper.jar
+!**/src/main/**/target/
+!**/src/test/**/target/
+config.yaml
+.git-rewrite
+### IntelliJ IDEA ###
+*.iws
+*.iml
+*.ipr
+.idea
+*.sh
+CLAUDE.md
+.claude
+nul
+dist.zip
+db/
+# Playwright
+.playwright/
+ms-playwright/
+playwright-*
+
+### Eclipse ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+### NetBeans ###
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+build/
+!**/src/main/**/build/
+!**/src/test/**/build/
+### VS Code ###
+.vscode/
+data.json
+src/main/java/boss/data.json
+merge_prs.log
+### Mac OS ###
+.DS_Store
+cookie.json
+# 各平台登录 Cookie（cookies/<platform>.json，含登录态，绝对不能提交）
+cookies/
+.env
+chromedriver
+*.jpg
+# 运行时上传的个人图片简历，绝不能提交
+/data/boss/resume/
+# 兼容旧版手动放置的图片简历，防止误提交个人文件
+/src/main/resources/resume*
+
+# Database files
+db/
+*.db
+
+# Frontend build output
+dist*/
+
+# 构建产物及其"旁移备份"目录（构建守卫 mv 出来的 .stale-<时间戳>）。
+# 历史教训：精确名规则（/.next/、dist/）对改名后的 xxx.stale-104931 失效，
+# 曾导致 113 MB 构建缓存被 git add -A 收进仓库。
+*.stale-*/
+
+# Gradle cache
+.gradle/
+# 持久化浏览器用户数据（含登录态，绝对不能提交）
+browser-data/
+
+# WorkBuddy 会话记忆目录（含个人操作记录，绝对不能提交）
+.workbuddy/
+# Chrome 安装/运行日志（含本机用户名路径）
+debug.log
+# 本机 Maven 配置文件（含个人本地仓库路径）
+settings.xml
