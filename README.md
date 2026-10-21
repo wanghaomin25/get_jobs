@@ -1,319 +1,184 @@
-<h1 align="center">🍀 Get Jobs【工作无忧】</h1>
 <div align="center">
 
-[![Stars](https://img.shields.io/github/stars/loks666/get_jobs?style=flat&label=🌟stars&labelColor=ff4f4f&color=ff8383)](https://github.com/loks666/get_jobs)
-[![QQ交流群](https://img.shields.io/badge/🐧QQ交流群-get_jobs-0FB5EB?labelColor=235389&logoColor=white&style=flat)][qq-link]
-[![License](https://img.shields.io/badge/📑license-PolyForm-34D058?labelColor=22863A&style=flat)](https://github.com/loks666/get_jobs/blob/main/LICENSE)
-![🤏🏻closed](https://img.shields.io/github/issues-search?query=repo%3Aloks666/get_jobs+is%3Aclosed&label=🤏🏻%20closed&labelColor=008B8B&color=00CCCC)
-[![Forks](https://img.shields.io/github/forks/loks666/get_jobs?style=flat&label=🏅%20forks&labelColor=800080&color=912CEE)](https://github.com/loks666/get_jobs/forks)
-[![Release](https://img.shields.io/github/v/release/loks666/get_jobs?style=flat&label=📦release&labelColor=B8860B&color=DAA520)](https://github.com/loks666/get_jobs/releases)
-[![updated](https://img.shields.io/github/last-commit/loks666/get_jobs/main?style=flat&label=🕒%20updated&labelColor=4B0082&color=7B68EE)](https://github.com/loks666/get_jobs/commits/main)
+# Get Jobs · 求职自动投递工具
 
-[![JDK](https://img.shields.io/badge/☕JDK-21-FF8C00?labelColor=C04000&style=flat)](https://adoptium.net/temurin/releases/?version=21)
-[![Spring Boot](https://img.shields.io/badge/🍃Spring%20Boot-3.5-6DB33F?labelColor=2E7D32&style=flat)](https://spring.io/projects/spring-boot)
-[![Gradle](https://img.shields.io/badge/🐘Gradle-9.7-26A69A?labelColor=00695C&style=flat)](https://gradle.org/)
-[![Playwright](https://img.shields.io/badge/🎭Patchright-1.62-E2574C?labelColor=A93226&style=flat)](https://github.com/Kaliiiiiiiiii-Vinyzu/patchright)
-[![SQLite](https://img.shields.io/badge/🗃️SQLite-3-4FC3F7?labelColor=0277BD&style=flat)](https://www.sqlite.org/)
-[![Next.js](https://img.shields.io/badge/⚡Next.js-16-B39DDB?labelColor=5E35B1&style=flat)](https://nextjs.org/)
-[![React](https://img.shields.io/badge/⚛️React-19-61DAFB?labelColor=1E88E5&style=flat)](https://react.dev/)
+**Boss直聘 / 智联招聘 / 前程无忧(51job) / 猎聘 —— 四平台自动投递**
 
-</div>
-<div align="center">
-<h2 align="center">黑暗无论多么长，光明迟早总是会来的</h2>
-<p><strong>我知道你心中有煎熬，有焦虑，像一柄长剑悬在头顶，随时可能落下。</strong><br>
-<strong>黎明破晓之时，苦难都将化作勋章</strong></p>
-<strong>🪅GUI盛大登场</strong>
-
-<p align="center">
-  <a href="https://trendshift.io/repositories/9608">
-    <img src="https://trendshift.io/api/badge/trendshift/repositories/9608/daily?language=Java" alt="#1 Java Repository Of The Day" height="55">
-  </a>
-</p>
+[![License](https://img.shields.io/badge/license-PolyForm--Noncommercial-blue.svg)](LICENSE)
+![Java](https://img.shields.io/badge/Java-21-orange.svg)
+![Spring Boot](https://img.shields.io/badge/Spring%20Boot-3.5-brightgreen.svg)
+![Playwright](https://img.shields.io/badge/Playwright-1.62-green.svg)
+![Next.js](https://img.shields.io/badge/Next.js-16-black.svg)
+![SQLite](https://img.shields.io/badge/SQLite-WAL-003B57.svg)
 
 </div>
 
-- 🔔 *重要更新*
-    - boss，猎聘已更新，目前两平台都可正常使用
-    - boss仍然建议手动在boss端投递，使用本项目在PC兜底使用。
-    - 本项目采用 PolyForm Noncommercial 1.0.0 协议，允许免费的非商业使用，禁止任何形式的商业使用；商业授权请联系作者
-    - 前端项目的编译版本会发布在release页面，如不想启动前端，可将dist文件夹放到resources文件夹下直接启动后端使用
-    - [【重要】跳转到文末更新日志](#-更新日志)
+> **📌 仓库说明**
+> 本项目是 [loks666/get_jobs](https://github.com/loks666/get_jobs) 的**个人二次开发分支**：修复了智联 / 51job / 猎聘的投递链路问题，新增四平台投递排队与状态管理、打招呼语三级回落等能力。原项目的版权、贡献者与致谢见文末，许可证为 **PolyForm Noncommercial 1.0.0（仅限非商业用途）**。
 
-### 🌴源码地址
+---
 
-- Github (国外访问)：https://github.com/loks666/get_jobs
-- Gitee·码云 (中国大陆)：https://gitee.com/lok666/get_jobs
+## ✨ 功能特性
 
-### 📢 广告位招租
+### 四平台覆盖
 
-- 本项目月均访问量可观，Star 8.4k+，QQ 交流群活跃，欢迎与求职、AI、开发工具相关的产品洽谈合作
-- 合作邮箱：`super_xiang@126.com`，或通过 QQ 群联系
+| 平台 | 能力 |
+|---|---|
+| **Boss直聘** | AI 生成个性化打招呼语；打招呼语三级回落（AI → 自定义 → 账号默认）；投递后自动发送图片简历；不活跃 HR 过滤；黑名单自动维护 |
+| **智联招聘** | 城市 / 关键词 / 薪资 / 职位类型（全职·兼职·实习）筛选；投递进度按关键词统计 |
+| **前程无忧 51job** | 自动翻页投递；职位类型筛选；投递结果自动核对 |
+| **猎聘** | 关键词 / 城市配置，自动打招呼 |
 
-## 🌟 特色功能
+### 通用能力
 
-- **🖥️ 图形化界面**：直观的网页管理界面，方便配置与运行，降低上手成本。
-- **💥 AI 智能匹配**：AI检测岗位匹配度，并根据JD自动撰写个性化的打招呼语（仅限 Boss 直聘）。
-- **📷️ 图片简历**：Boos直聘可在发送打招呼语后自动发送图片简历，无须等待HR索要简历，有效提高回复率。
-- **🔎 智能过滤**：自动过滤 **不活跃 HR**、 **猎头岗位**、 **目标薪资**，让你的简历投递更精准。
-- **📢 实时通知**：通过企业微信消息推送，实时掌握简历投递情况，不错过任何机会。
-- **🚫 黑名单功能**：自动更新黑名单企业，避免重复投递不合适的公司，提高投递效率。
-- **🛠️ 易于配置**：集中化配置，只需修改配置文件即可自定义筛选条件，轻松上手。
-- **🔄 持久登录**：支持超长 Cookie 登录，大部分平台每周仅需扫码一次，减少重复操作。
+- **🤖 AI 打招呼语**：兼容 OpenAI 接口格式（官方接口或自建中转均可），按 JD 自动撰写打招呼语
+- **🚦 显性投递排队**：四平台共用同一个浏览器实例，自动排队执行；排队中的任务可随时取消
+- **🛑 可靠的停止机制**：任务卡死时 15 秒内自动复位，界面不再永久卡在"停止中"
+- **📊 实时状态**：后端状态机驱动（空闲 / 排队中 / 投递中 / 停止中），刷新页面不丢状态
+- **🔐 持久登录**：登录态存本地 SQLite，大部分平台每周扫码一次即可
+- **📢 企业微信推送**（可选）：投递结果通过机器人 Webhook 实时通知
+- **🛡️ 反检测**：基于 Patchright（打过反检测补丁的 Playwright）驱动浏览器
+- **🖥️ Web 管理页**：Next.js 单页应用，平台配置、登录、启停、进度一目了然
 
-### 🔞️ 注意事项
+---
 
-- ❌必须要关闭墙外代理，由于主要针对的国内平台，墙外代理会导致页面加载缓慢
-- 💪🏻如你有“折腾精神”希望自己配置，QQ群内提供免费答疑，如你不想麻烦，可进入群聊查看群公告
-- 📰由于不同系统的页面不一样，导致可能不兼容，文末会给出文档，尽可能让大家能自定义修改
-- 🚩如您不方便访问github，可使用码云镜像 (中国大陆)版本：[gitee/getjobs](https://gitee.com/lok666/get_jobs)
+## 🧱 技术栈
 
-> 已经有人在交流群里 **发广告** 等与本项目无关的信息
-> 如果带着不同目的或者没想清楚就进群的
-> 一经发现群主会对您的家人及朋友进行亲切 (**没有素质**)的问候
-> 并将您请出群聊，请珍惜交流的机会，谢谢！
+| 层 | 技术 |
+|---|---|
+| 后端 | Java 21 · Spring Boot 3.5 · Playwright 1.62 + Patchright 1.62.1 · MyBatis-Plus · SQLite（WAL 模式） |
+| 前端 | Next.js 16 · React 19 · TypeScript · Tailwind CSS |
+| 构建 | Gradle 9.7（Kotlin DSL）· pnpm / corepack |
 
-## 🚀 如何使用？
+---
 
-### 1️⃣ 使用git拉取代码
+## 📦 环境要求
+
+- **JDK 21**
+- **Node.js 20+**（Playwright 驱动与前端构建依赖 npm/pnpm）
+- 能正常访问目标招聘网站的网络（**请关闭墙外代理**，否则页面加载缓慢）
+- 约 1 GB 磁盘空间（浏览器驱动与依赖）
+
+---
+
+## 🚀 快速开始
+
+### 1️⃣ 获取数据库文件（新用户必做）
+
+本项目**不自动创建全部数据表**，没有数据库文件无法启动。仓库不包含数据库，请从上游 release 页面下载空库模板：
+
+1. 打开 [loks666/get_jobs 最新 release](https://github.com/loks666/get_jobs/releases/latest)
+2. 下载 `getjobs.db.template`
+3. 重命名为 `getjobs.db`，放到项目根目录的 `db/` 文件夹下，即 `db/getjobs.db`
+
+模板已包含全部表结构（16 张）和各平台下拉框字典数据（城市 / 行业 / 经验 / 学历等 673 条），配置、Cookie、投递记录均为空，由你在网页端自行填写。
+
+> 本分支会自动补齐新增字段（如"职位类型"列），无需手工迁移。
+> ⚠️ **切勿覆盖自己已有的 `db/getjobs.db`**，否则配置与登录态全部丢失。
+
+### 2️⃣ 启动
+
+Windows 推荐：
+
+```bat
+start.bat            :: 后台启动（jar 缺失时自动构建），可关闭窗口
+start.bat console    :: 前台运行，控制台查看日志
+stop.bat             :: 停止服务（按端口精确结束进程）
+```
+
+或手动构建运行：
+
+```bash
+gradlew bootJar                  # 构建（自动装配 Patchright 驱动 + 构建管理页）
+java -jar build/libs/get_jobs.jar
+```
+
+首次构建会自动完成：安装 Patchright 反检测驱动 → 构建 Next.js 管理页。启动成功后自动打开管理页 **http://localhost:6866**（后端 API 端口 9527）。
+
+### 3️⃣ 扫码登录
+
+管理页 → 对应平台页面 → 扫码登录（Boss 支持 Cookie 持久化，登录一次可保持较长时间）。
+
+### 4️⃣ 配置并开始投递
+
+| 配置项 | 位置 | 说明 |
+|---|---|---|
+| AI 配置 | 管理页 → 环境配置 | `BASE_URL` / `API_KEY` / `MODEL`（OpenAI 兼容接口），保存后即生效，**无需修改 `.env`** |
+| 企业微信推送（可选） | 管理页 → 环境配置 | `HOOK_URL` 填机器人 Webhook 地址 |
+| Boss 配置 | 管理页 → Boss直聘 | 关键词、城市、打招呼语、图片简历开关、HR 活跃度过滤 |
+| 智联 / 51job 配置 | 对应平台页面 | 关键词、城市、薪资、**职位类型**（全职 / 兼职 / 实习） |
+| 图片简历 | Boss 配置页上传 | 上传 JPG 后随打招呼语自动发送（仅存本地，不进仓库、不进安装包） |
+
+配置保存后，点击「**开始投递**」即可；投递过程中可随时「**停止投递**」（排队中也可取消），进度与状态实时显示。
+
+---
+
+## 💡 使用示例（Boss 直聘完整流程）
+
+1. **登录**：管理页 → Boss直聘 → 扫码登录，确认状态显示"已登录"
+2. **配置**：填写关键词（如 `Java后端`）与城市；开启 AI 打招呼或填写自定义招呼语；勾选"自动发送图片简历"并上传 JPG
+3. **开始**：点击「开始投递」，页面显示"投递中"与实时进度
+4. **观察**：AI 会为每个岗位生成个性化招呼语；命中不活跃 HR 的岗位自动过滤；已沟通过的 HR 不会重复打扰
+5. **停止**：随时点击「停止投递」，任务安全收尾后回到"空闲"
+
+<div align="center">
+  <img src="doc/imgs/boss配置.png" width="45%" alt="Boss 配置页"/>
+  <img src="doc/imgs/智联配置.png" width="45%" alt="智联配置页"/>
+  <br/>
+  <img src="doc/imgs/AI配置.png" width="45%" alt="AI 配置"/>
+  <img src="doc/imgs/运行日志.png" width="45%" alt="运行日志"/>
+</div>
+
+---
+
+## 📁 目录结构
 
 ```
-git clone https://github.com/loks666/get_jobs.git
-cd get_jobs
+get_jobs/
+├── src/main/java/com/getjobs/
+│   ├── application/           Web 层：Controller / Service / Entity / Mapper
+│   └── worker/                投递核心：boss · zhilian · job51 · liepin 四平台实现
+├── src/main/resources/        配置、静态资源、管理页构建产物（dist/）
+├── front/                     Next.js 管理页面源码
+├── doc/ · docs/               项目文档与投递过程记录
+├── build.gradle.kts           构建脚本（驱动装配 / 前端构建 / 打包任务）
+├── start.bat · stop.bat       启动 / 停止脚本
+└── db/                        SQLite 数据库（已被 .gitignore，不会提交）
 ```
 
-### 2️⃣ 环境配置:Gradle、JDK21
+---
 
-- 目前程序自动判断系统环境，自动下载对应的chromedriver，并进行浏览器操作，需解决网络问题。
+## ❓ 常见问题
 
-更多环境配置详情请点击：📚 [环境配置](https://github.com/loks666/get_jobs/wiki/环境配置)
+**Q: 启动报 `Port 9527 already in use`？**
+A: 端口被占用。先运行 `stop.bat`；若无效，用 `netstat -ano | findstr :9527` 找到占用进程结束掉。注意不要在设置了 `SERVER_PORT` 环境变量的终端里启动。
 
-### 3️⃣ 下载数据库文件（新用户必做）
+**Q: clone 后管理页打不开 / 提示未找到管理页面？**
+A: 管理页需要 Node.js 环境构建。确认已装 Node 20+，然后执行 `gradlew buildFrontend -PrebuildFrontend` 强制重建。
 
-本项目不会自动建表， **没有数据库文件无法启动**。为避免把开发者本机的配置和登录态一起发布，仓库中不包含数据库文件，请从
-release 页面下载空数据库：
+**Q: 提示 `database is locked`？**
+A: 已启用 SQLite WAL 模式。请确认没有其它程序（如数据库工具）正打开 `db/getjobs.db`。
 
-1. 到 [最新 release](https://github.com/loks666/get_jobs/releases/latest) 下载 `getjobs.db.template`
-2. **把它重命名为 `getjobs.db`**
-3. 放到项目根目录的 `db/` 文件夹下，最终路径为 `db/getjobs.db`
+**Q: 我的简历会泄露吗？**
+A: 不会。图片简历只保存在本地 `data/boss/resume/`，该目录已被 `.gitignore` 排除，构建时也会被明确排除，不会进入安装包。
 
-这个空库已经带好了 16 张表的结构和各平台下拉框的字典数据（城市、行业、经验、学历等共 673 条），配置、Cookie、投递记录都是空的，由你自己在网页端填写。
-
-> ⚠️ 老用户升级时不要覆盖自己已有的 `db/getjobs.db`，否则配置和登录态会全部丢失。
-
-### 4️⃣ 网页端修改配置，并保存 (一般默认即可,需要修改自己的地区和岗位)
-
-- 🤖 AI配置
-
-    - `.env`配制如下：
-      ```
-      HOOK_URL=https://qyapi.weixin.qq.com/cgi-bin/webhook/send?key=your_key_here
-      BASE_URL=https://api.openai.com
-      API_KEY=sk-xxx
-      MODEL=gpt-5-nano
-      ```
-    - `HOOK_URL`：企业微信机器人推送的链接
-    - `BASE_URL`：直连或中转链接地址
-    - `API_KEY`：调用的API KEY
-    - `MODEL`：需要使用的模型名称
-
-  > 根据测试，boss直聘在每天所有的岗位投递结束后消耗的额度 (gpt-5-nano)大约在0.06美元 (6美分)左右，日常使用成本很低  
-  > 💥`BASE_URL` 填任意兼容 OpenAI 接口格式的地址即可（官方接口或你自己的中转服务都可以），本项目不绑定、不推荐任何第三方代理商
-
-    - AI生成的打招呼语示例  
-      <img src="src/main/resources/images/AiSayHi.png" alt="AI生成的打招呼语示例">
-
-- boss直聘 ([Boss.java](src/main/java/boss/Boss.java))【喜大普奔，目前Boss打招呼上限已修改为每日150次】
-
-  > 注意：设置配置文件的sayHi为你的打招呼语，否则会投递失败
-  > 投递结束后会自动更新黑名单企业，发送过不合适等消息的HR的公司会加入黑名单，不会在投递该公司
-  > 现在找工作是很难，但也别做舔狗，打工人不是牛马！
-
-- 发送图片简历
-
-  > 在resources文件夹下，将自己的pdf简历转换为resume.jpg，同时配置项sendImgResume为ture，即可自动发送图片简历
-  > pdf转图片需要wps会员，如果找不到相关工具，可联系群主帮忙转换，5r/次
-
-- 猎聘 ([Liepin.java](src/main/java/liepin/Liepin.java))【默认打招呼无上限，主动发消息有上限，成功率不高，好在量大，较为推荐】
-
-  > 注意：需要在猎聘App最新版设置打招呼语 (默或者自定义皆可)，即可自动发送消息，不会被限制
-  > 只可微信扫码，请绑定微信账号
-  > 需要使用最新版猎聘手机app设置打招呼文本，只要不主动发消息，可以无限制对猎头打招呼，程序默认为该配置。
-
-- 51job ([Job.java](src/main/java/job51/Job51.java))【投递有上限，且限制搜索到的岗位数量，没什么活人】
-
-  > 51job现在已经烂掉了，不建议使用
-  > 现在投递一段时间后会出现投递上限
-  > 目前的解决方式是投一页暂停10秒，先这么着吧
-
-- 智联招聘 ([ZhiLian.java](src/main/java/zhilian/ZhiLian.java))【投递上限100左右，烂掉了，不要用】
-
-  > 智联招聘需要指定默认投递简历 (在线简历 or 附件简历)，否则会投递失败
-  > 只可微信扫码，请绑定微信账号
-
-- 本项目目前维护的平台为boss，猎聘，由于51、智联、拉钩使用人太少，已停止维护，如有人修复了这三项平台问题，可经沟通后提交pr.
-
-### 5️⃣ 运行代码
-
-- 🏃🏻‍♂️‍➡️ 运行启动类即可[GetJobsApplication.java](src/main/java/com/getjobs/GetJobsApplication.java)
+**Q: 为什么投递结果和实际不一致？**
+A: 51job 等平台的弹窗不返回真实成功数，程序按"勾选数"统计并做一致性校验，属平台限制。
 
 ---
 
-### 运行截图
+## 📄 许可证
 
-![运行日志.png](doc/imgs/%E8%BF%90%E8%A1%8C%E6%97%A5%E5%BF%97.png)
-![环境变量配置.png](doc/imgs/%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F%E9%85%8D%E7%BD%AE.png)
-![AI配置.png](doc/imgs/AI%E9%85%8D%E7%BD%AE.png)
-![boss配置.png](doc/imgs/boss%E9%85%8D%E7%BD%AE.png)
-![boss岗位分析.png](doc/imgs/boss%E5%B2%97%E4%BD%8D%E5%88%86%E6%9E%90.png)
-![猎聘配置.png](doc/imgs/%E7%8C%8E%E8%81%98%E9%85%8D%E7%BD%AE.png)
-![猎聘岗位分析.png](doc/imgs/%E7%8C%8E%E8%81%98%E5%B2%97%E4%BD%8D%E5%88%86%E6%9E%90.png)
-![51job配置.png](doc/imgs/51job%E9%85%8D%E7%BD%AE.png)
-![51岗位分析.png](doc/imgs/51%E5%B2%97%E4%BD%8D%E5%88%86%E6%9E%90.png)
-![智联配置.png](doc/imgs/%E6%99%BA%E8%81%94%E9%85%8D%E7%BD%AE.png)
-![智联岗位分析.png](doc/imgs/%E6%99%BA%E8%81%94%E5%B2%97%E4%BD%8D%E5%88%86%E6%9E%90.png)
+本项目采用 **PolyForm Noncommercial License 1.0.0**：任何人都可以免费使用、修改和分发本软件，但**仅限非商业用途**；商业使用需获得权利人的书面授权。
+
+- **上游项目**：[loks666/get_jobs](https://github.com/loks666/get_jobs) —— 本项目的基础，感谢原作者及所有贡献者
+- **本分支的主要修改**：智联 / 51job / 猎聘投递链路修复、四平台投递排队与状态管理、打招呼语三级回落、HR 活跃度过滤档位、Patchright 驱动装配与前端构建集成、独立 JAR 启动脚本
+- 参与贡献请先阅读 [CLA.md](CLA.md)
+
 ---
-
-### 💬 加入 get_jobs 交流群
-欢迎交流求职经验、技术问题与项目使用心得。  
-- [![get_jobs交流①群](https://img.shields.io/badge/🐧get__jobs交流①群-(2000人群·开放申请)-0FB5EB?labelColor=235389&logoColor=white&style=flat)][qq-link]  
-- [![get_jobs交流②群](https://img.shields.io/badge/🐧get__jobs交流②群-(500人群·开放申请)-0FB5EB?labelColor=235389&logoColor=white&style=flat)][qq-link-2]
-
-## ☕ 赞赏支持
 
 <div align="center">
-<table>
-<tr>
-<td align="center"><img src="src/main/resources/images/aliPay.jpg" alt="支付宝" width="220"><br/>支付宝</td>
-<td align="center"><img src="src/main/resources/images/wechatpay.jpg" alt="微信支付" width="220"><br/>微信支付</td>
-</tr>
-</table>
+
+**如果这个项目对你有帮助，欢迎点个 ⭐ Star**
+
 </div>
-
-> 本项目免费开源，我从未想到过有人会打赏，直到我某天真的收到了来自某人的赞赏支持，深受触动，所以重新开启了打赏码，不论打赏与否，本项目都将感谢您对本项目的支持与使用！
-
-## 🚩 环境部署问题
-
-> 本项目文档已相对完善，如有运行仍有问题，请添加QQ群联系群主或在群内沟通
-
-- 请注意：
-    1. 本项目不支持服务器部署，无须尝试，如招聘网站发现访问者为服务器IP，不会返回任何网站数据。
-    2. 在开发与部署过程有任何问题都可在群内沟通，但群内的同学没有义务必须要解决您的问题，请保持礼貌提问的态度。
-
-> 注：本项目为免费开源项目，非Saas类出售商品，不会考虑任何兼容的设备以及他人的需求，如多位同学有相同的需求可以提出issue，具有一定需求性会考虑开发，其他的问题有能力就自己修改，否则请联系群主，非诚勿扰。
-
----
-
-## 📑 更新日志
-
-[更新日志.md](doc/%E6%9B%B4%E6%96%B0%E6%97%A5%E5%BF%97.md)
-
-## 🤝 参与贡献
-
-- 本项目禁止一切未经沟通的pr，会直接拒掉，如有贡献需求，请在issue和discussions中查看自己可以开发的功能和内容，群里与我沟通
-
-> 感谢每一位为本项目提交过代码的朋友 🙏
-
-<a href="https://github.com/loks666/get_jobs/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=loks666/get_jobs" alt="贡献者" />
-</a>
-
----
-
-## 🚀 PR 提交流程（非常重要！）
-
-1. Fork 本项目，提issue或联系群主，讨论你的想法是否有开发的必要
-2. 确认通过后，从 `dev` 分支新建你的个人开发分支
-3. 开发完成后，提交 Pull Request 到 **loks666/get_jobs 的 `dev` 分支**  
-   （❗ **注意：不是 main，是 dev！**）
-4. 提交 Commit 时，第一行必须符合格式：`<emoji> <小写英文>.`，即以一个 **Emoji 表情**
-   开头（[emoji网站](https://www.emojiall.com/zh-hans/all-emojis)），空格后接 **全小写英文**，并以 **`.`** 结尾。
-   例如：`🐛 fix cookie table creation on startup.`
-    - PR 标题也需符合同样格式（合并时会作为提交信息）。
-    - CI 会自动检查，不符合会无法合并。
-    - 本地可运行 `sh .githooks/setup.sh` 启用提交前检查和提交模板。
-5. 等待管理员审核，验证无误后，代码将合并到 `main` 分支
-
-> 📑 本项目已启用[贡献者许可协议（CLA）](CLA.md)，提交 PR 时需在模板中勾选同意。
-> 你的版权仍归你自己，CLA 只是让维护者能在保持项目非商业免费开放的同时对外授予商业许可。
-
----
-
-# ✨ 相信自己！
-
-> **"每一个伟大，都有一个平凡的开始"**
-
-
----
-
-### 📰 开源协议
-
-[LICENSE](LICENSE)
-
----
-
-### 🙅🏻‍♂️ 谨防受骗
-
-- 市面上充斥着很多使用本项目招摇撞骗的项目，请擦亮眼睛，谨防上当受骗。
-- 目前已收到多人举报，会有别有用心的人，潜伏在群里，通过搜索群内用户的QQ号添加好友，通过后就推广自己的收费项目，已有多人受骗，比如像下面这个项目，如你发现，请积极联系我，并问候下他的亲朋好友，谢谢
-- 另外注明，这个所谓一键直达的项目，由于自己推广不力，不断的在本项目群里骚扰用户，想碰瓷本项目，不胜其烦，几乎和狗皮膏药一样，如你碰到了，请帮我淬两口，并吐一口痰，感谢你好心人。
-- ![img.png](src/main/resources/img.png)
-
----
-
-### 🧰 其他开源项目
-
-> 除了求职工具，以下为 **机器学习 · 深度学习 · 强化学习 · 神经网络** 方向的项目，以及一些实用工具，希望可以帮到你，欢迎 Star
-> 👇
-> 可能你觉得是推广，不否认这样的说法，但也真心希望你能在我这学到点东西
-
-#### 🧠 AI 与算法
-
-| 方向                | 项目                                                                                | 简介                                                                                   |    推荐    |
-|:--------------------|:------------------------------------------------------------------------------------|:---------------------------------------------------------------------------------------|:----------:|
-| 🕹️强化学习·神经网络 | [**RL-MiniGames**](https://github.com/loks666/RL-MiniGames)                         | 神经网络 + 强化学习小游戏，训练 NeuralBot 自主决策                                     | ⭐⭐⭐⭐⭐ |
-| 👻搜索·启发式规划   | [**pacman-engine**](https://github.com/loks666/pacman-engine)                       | 吃豆人 AI 智能体，用搜索与启发式规划让它自动玩游戏                                     | ⭐⭐⭐⭐⭐ |
-| 🚦深度学习          | [**yolov5-5.0**](https://github.com/loks666/yolov5-5.0)                             | 基于 YOLOv5 识别交通标志                                                               | ⭐⭐⭐⭐⭐ |
-| 📈机器学习·金融     | [**FinancialMachineLearning**](https://github.com/loks666/FinancialMachineLearning) | CAPM + 均值方差优化，用二次规划构建最优投资组合                                        |  ⭐⭐⭐⭐  |
-| 🏥大模型·医疗       | [**medicine_llm**](https://github.com/loks666/medicine_llm)                         | 医疗大模型对话测试平台（FastAPI + Vue3），多模型切换、SSE 流式对话、会话管理与消息评价 |  ⭐⭐⭐⭐  |
-| 🖼️深度学习          | [**gan_fixed_img**](https://github.com/loks666/gan_fixed_img)                       | GAN 对抗网络修复破损图片（效果未到终极目标，仅供学习）                                 |   ⭐⭐⭐   |
-| 🩺机器学习·医疗     | [**disease-prediction**](https://github.com/loks666/disease-prediction)             | 疾病预测分析系统：数据处理、模型训练评估、结果展示                                     |   ⭐⭐⭐   |
-
-#### 🛠️ 应用与工具
-
-| 项目                                                                     | 简介                                          |    推荐    |
-|:-------------------------------------------------------------------------|:----------------------------------------------|:----------:|
-| 🗄️ [**WeChatVault**](https://github.com/loks666/WeChatVault)             | PC 端微信数据库工具，聊天记录一键导出（Rust） | ⭐⭐⭐⭐⭐ |
-| 💬 [**FlyAI**](https://github.com/loks666/FlyAI)                         | 微信群聊统计助手，AI 统计群聊数据并推送（Go） | ⭐⭐⭐⭐⭐ |
-| 📥 [**idm_crack**](https://github.com/loks666/idm_crack)                 | IDM 破解文件备份仓库                          | ⭐⭐⭐⭐⭐ |
-| 👤 [**loks666**](https://github.com/loks666/loks666)                     | GitHub 个人主页，自动统计数据并更新描述文件   | ⭐⭐⭐⭐⭐ |
-| 🤖 [**anyrouter-autolog**](https://github.com/loks666/anyrouter-autolog) | AnyRouter 多账号自动签到（Fork）              |  ⭐⭐⭐⭐  |
-
----
-
-### ☕️ Github Star历史
-
-<a href="https://star-history.com/#loks666/get_jobs&Date">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=loks666/get_jobs&type=Date&theme=dark" />
-    <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/svg?repos=loks666/get_jobs&type=Date" />
-    <img alt="Star History Chart" src="https://api.star-history.com/svg?repos=loks666/get_jobs&type=Date" />
-  </picture>
-</a>
-
-<!-- LINK GROUP -->
-
-<!-- [![][fossa-license-shield]][fossa-license-link] -->
-
-[qq-link]: https://qm.qq.com/q/qJwmIrqPU
-
-[qq-link-2]: https://qun.qq.com/universal-share/share?ac=1&authKey=qo6bGkogtLrVusb7GI%2Bv08KaTWEofET0bo%2Bdk5hqEk1JEY0II3Lu%2FGXPCoROWZUe&busi_data=eyJncm91cENvZGUiOiI1Nzg3ODU1MDUiLCJ0b2tlbiI6IjRXQklndWdFRkloTlpRUE82UXpUREVSa0FDN3Y2UDI1UE42VHBiV3NmYjNLYkdGczRMKzdId0NHeGdQVXMrRjEiLCJ1aW4iOiIyODQxOTAwNTYifQ%3D%3D&data=DR0uxpwdTVM1YFw3evPIbj_L-79Bp1AU91gfeieGqh8D4uEXGuxAl-lmZ2SEW6UNUuKNBtKzGflIYe6vPa9SqA&svctype=4&tempid=h5_group_info
-
-[qq-shield-badge]: https://img.shields.io/badge/QQ交流群-get_jobs-0FB5EB?labelColor=235389&logo=tencent-qq&logoColor=white&style=flat
-
-[pr-welcome-link]: https://github.com/loks666/get_jobs/pulls
-
-[pr-welcome-shield]: https://img.shields.io/badge/🤯_pr_welcome-%E2%86%92-ffcb47?labelColor=black&style=for-the-badge
-
-[fossa-license-shield]: https://app.fossa.com/api/projects/git/Bgithub.com/Floks666/Fget_jobs.svg?type=shield
-
-[fossa-license-link]: https://app.fossa.com/projects/git/Bgithub.com/Floks666/Fget_jobs?ref=badge_shield
